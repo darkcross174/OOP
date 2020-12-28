@@ -21,7 +21,7 @@ public class RadioAdvancedTest {
         String expectedName = "Радио";
 
         assertEquals(0, Radio.getCurrentVolume());
-        Radio.setCurrentVolume(11);
+        Radio.setCurrentVolume(-10);
         assertEquals(0, Radio.getCurrentVolume());
     }
 }
