@@ -8,9 +8,9 @@ public class Radio {
     private int currentVolume;
     private int currentChannel;
 
-   public int getCurrentChannel() {
+    public int getCurrentChannel() {
         return currentChannel;
-   }
+    }
 
     public void setCurrentChannel(int currentChannel) {
         if (currentChannel > maxChannel) {
