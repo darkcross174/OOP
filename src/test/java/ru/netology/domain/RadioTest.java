@@ -7,7 +7,20 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
     Radio radio = new Radio();
 
+    @Test
+    public void shouldNextChannel3() {
+        int currentChannel = 15;
+        radio.setCurrentChannel(currentChannel);
+        assertEquals(0, radio.getCurrentChannel());
+    }
 
+    @Test
+    public void shouldPrevChannel3() {
+        int currentChannel = -16;
+        radio.setCurrentChannel(currentChannel);
+        radio.prevChannel();
+        assertEquals(9, radio.getCurrentChannel());
+    }
 
     @Test
     public void shouldNextChannel() {
@@ -82,6 +95,21 @@ public class RadioTest {
         radio.setCurrentVolume(currentVolume);
         radio.upVolume();
         assertEquals(2, radio.getCurrentVolume());
+    }
+
+    @Test
+    public void shouldUpVolume2() {
+        int currentVolume = 15;
+        radio.setCurrentVolume(currentVolume);
+        assertEquals(0, radio.getCurrentVolume());
+    }
+
+    @Test
+    public void shouldDownVolume2() {
+        int currentVolume = -16;
+        radio.setCurrentVolume(currentVolume);
+        radio.downVolume();
+        assertEquals(0, radio.getCurrentVolume());
     }
 
     @Test
