@@ -10,7 +10,7 @@ public class RadioTest {
 
 
     @Test
-    void shouldNextChannel() {
+    public void shouldNextChannel() {
         int currentChannel = 9;
         radio.setCurrentChannel(currentChannel);
         radio.nextChannel();
