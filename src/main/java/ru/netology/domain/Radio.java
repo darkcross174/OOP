@@ -20,10 +20,6 @@ public class Radio {
         this.maxChannel = maxChannel;
     }
 
-    public int getCurrentChannel() {
-        return currentChannel;
-    }
-
     public void setCurrentChannel(int currentChannel) {
         if (currentChannel > maxChannel) {
             return;
@@ -63,11 +59,7 @@ public class Radio {
         this.currentChannel = numberChannel;
     }
 
-    public int getCurrentVolume() {
-        return currentVolume;
-    }
-
-    public void setCurrentVolume(int currentVolume) {
+     public void setCurrentVolume(int currentVolume) {
         if (currentVolume > maxVolume) {
             return;
         }
